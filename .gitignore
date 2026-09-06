@@ -1,0 +1,39 @@
+# Secrets — never commit any .env variant
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Database and logs — stay local or in Docker volume
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.log.*
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker
+*.env.docker
